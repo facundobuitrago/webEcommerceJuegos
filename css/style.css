@@ -199,6 +199,7 @@ header div .panel-carrito {
 }
 
 /** PRODUCTOS DESTACADOS **/
+
 h4 {
     text-align: left;
     font-size: 35px;
@@ -241,7 +242,6 @@ h4 {
     background-color: crimson;
     border-radius: 5px;
     text-decoration: none;
-
 
 }
 
@@ -308,13 +308,13 @@ h2 {
 }
 
 .varios img {
-    width: 80px ;
+    width: 80px;
     margin: 10%;
 }
 
 /**! PAGE PRODUCTOS **/
 
-.productos__joysticks {
+.productos__dropdown {
 
     display: flex;
     justify-content: center;
@@ -322,7 +322,7 @@ h2 {
     margin: 5%;
 }
 
-.productos__joysticks {
+.productos__dropdown {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -394,7 +394,7 @@ h2 {
 
 /**! PAGE GALERIA **/
 
-section .imagenes_galeria {
+section .grid_galeria {
     display: grid;
     grid-template-columns: repeat(3, 3fr);
     grid-gap: 10px;
@@ -402,7 +402,7 @@ section .imagenes_galeria {
     margin: 20px auto;
 }
 
-.img_galeria {
+.grid_galeria {
 
     text-align: center;
     width: 100%;
@@ -419,20 +419,35 @@ section .imagenes_galeria {
     object-fit: cover;
 }
 
+@media screen and (max-width: 480px) {
+    .imagen_final {
+        grid-column-end: span 2;
+    }
+}
 
 @media screen and (max-width: 480px) {
-    section .imagenes_galeria {
-        grid-template-columns: 2 1fr;
+    .imagen_alta {
+        grid-row-end: span 2;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logos {
+        grid-column-end: span 2;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    section .grid_galeria {
+        grid-template-columns: 1 1fr;
 
     }
 }
 
-@media screen and (max-width: 800px) {
-    section .imagenes_galeria {
+@media screen and (max-width: 480px) {
+    section .grid_galeria {
         grid-template-columns: 1fr 1fr;
-
-
-
     }
 }
 
@@ -722,7 +737,8 @@ footer {
 
     background-image: url(../img/prism.png);
 }
-.logo{
+
+.logo {
 
     display: flex;
 }
@@ -744,7 +760,7 @@ footer .footer-container {
     justify-content: center;
     padding-left: 10%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
+
 }
 
 footer .iconos {
@@ -762,4 +778,3 @@ footer p {
     align-items: flex-end;
     justify-content: center;
 }
-
