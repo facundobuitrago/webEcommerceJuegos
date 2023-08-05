@@ -1,12 +1,14 @@
 /**! HEADER **/
-.{
+
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-header nav .logo {
+
+header .navbar-brand .logo {
     width: 50px;
+    display: inline-block;
 }
 
 header .navbar {
@@ -37,8 +39,7 @@ header nav .collapse .navbar-collapse ul li a {
 
 }
 
-.nav-link:focus,
-.nav-link:hover {
+.nav-link:focus .nav-link:hover {
     color: var(--bs-nav-link-hover-color);
     color: yellow;
 }
@@ -307,13 +308,13 @@ h2 {
 }
 
 .varios img {
-    width: 80px;
-    margin: 30%;
+    width: 80px ;
+    margin: 10%;
 }
 
 /**! PAGE PRODUCTOS **/
 
-.joysticks {
+.productos__joysticks {
 
     display: flex;
     justify-content: center;
@@ -321,7 +322,7 @@ h2 {
     margin: 5%;
 }
 
-.joysticks {
+.productos__joysticks {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -348,6 +349,13 @@ h2 {
 }
 
 @media screen and (max-width: 768px) {
+    .card {
+        width: 100%;
+
+    }
+}
+
+@media screen and (max-width: 450px) {
     .card {
         width: 100%;
 
@@ -699,8 +707,8 @@ body .signupFrm {
 
 .fixed {
     position: fixed;
-    bottom: 20%;
-    right: 2%;
+    bottom: 25%;
+    right: 5%;
 
 }
 
@@ -714,10 +722,9 @@ footer {
 
     background-image: url(../img/prism.png);
 }
+.logo{
 
-footer .logo {
     display: flex;
-
 }
 
 footer h6 {
@@ -734,32 +741,19 @@ span {
 footer .footer-container {
     font-size: 15px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding-left: 10%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #dbdbdb;
-
-}
-
-
-footer .footer-container ul li {
-    list-style-type: none;
-    text-decoration: none;
-
-}
-
-footer .footer-container a {
-    text-decoration: none;
-    color: #dbdbdb;
+    
 }
 
 footer .iconos {
     display: flex;
-    padding-right: 10%;
+    padding-right: 15%;
 }
 
 footer .iconos a {
-    padding: 5%;
+    padding: 2%;
 }
 
 footer p {
@@ -768,3 +762,4 @@ footer p {
     align-items: flex-end;
     justify-content: center;
 }
+
