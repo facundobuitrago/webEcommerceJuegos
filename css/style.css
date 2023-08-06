@@ -282,10 +282,17 @@ h2 {
     justify-content: space-evenly;
 }
 
+/** TARJETAS DE PRODUCTOS **/
+
 .card {
     width: 18rem;
     margin-bottom: 20px;
     text-align: center;
+    box-shadow: 10px 10px 31px -8px rgba(0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 31px -8px rgba(0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 31px -8px rgba(0, 0, 0.75);
+    
+
 }
 
 .card-img-top {
@@ -297,9 +304,10 @@ h2 {
     text-decoration: none;
 }
 
-.card-text {
+.card .card-text {
     color: rgb(53, 196, 53);
     text-align: center;
+    font-size: 15px;
 }
 
 @media screen and (max-width: 768px) {
