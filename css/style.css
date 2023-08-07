@@ -5,7 +5,6 @@
     padding: 0;
 }
 
-
 header .navbar-brand .logo {
     width: 50px;
     display: inline-block;
@@ -239,8 +238,6 @@ h4 {
     border: 5px solid rgb(192, 169, 37);
     border-radius: 15px;
     box-sizing: border-box;
-
-
 }
 
 h2 {
@@ -292,7 +289,6 @@ h2 {
     -webkit-box-shadow: 10px 10px 31px -8px rgba(0, 0, 0.75);
     -moz-box-shadow: 10px 10px 31px -8px rgba(0, 0, 0.75);
     
-
 }
 
 .card-img-top {
@@ -339,7 +335,6 @@ h2 {
     font-weight: 900;
     font-size: 20px;
     padding: 50px;
-
 }
 
 .review img {
@@ -351,8 +346,6 @@ h2 {
 .comment {
     margin-left: 10px;
 }
-
-
 
 /**! PAGE GALERIA **/
 
@@ -446,7 +439,6 @@ section .nosotros {
     .nosotros p {
         font-size: 15px;
     }
-
 }
 
 @media screen and (max-width: 480px) {
@@ -456,10 +448,7 @@ section .nosotros {
 
 }
 
-
-
 /**! PAGE CONTACTO **/
-
 
 .contacto_css {
 
@@ -486,7 +475,6 @@ section .nosotros {
     padding: 30px;
     background-color: #fbfbfb;
 }
-
 
 input,
 textarea {
@@ -540,7 +528,6 @@ span {
 h1 {
     font-size: 39px;
     text-align: center;
-    /* Corregir "letf" a "center" */
     padding-bottom: 20px;
     color: #ab4493;
 }
