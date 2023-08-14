@@ -1,0 +1,70 @@
+header {
+    nav {
+        background-image: url(../img/prism.png);
+        .navbar-brand {
+            color: $primary-color;
+            font-size: 30px;
+            font-family: 'Inter', sans-serif;
+            margin-left: 10px;
+            .logo {
+                width: 50px;
+                display: inline-block;
+            }
+            span {
+                font-weight: bold;
+            }
+            &:hover {
+                color: $primary-color;
+            }
+        }
+        .navbar {
+            --bs-navbar-brand-margin-end: 20%;
+        }
+        .collapse {
+            .navbar-collapse {
+                ul {
+                    li {
+                        a {
+                            color: $primary-color;
+                            &:hover {
+                                color: $link-hover-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .navbar-toggler {
+            background-color: $navbar-bg-color;
+            &:focus {
+                box-shadow: 0 0 4px rgba(0, 0, 0, 0.50);
+            }
+        }
+        .nav-link {
+            color: $primary-color;
+            font-size: 20px;
+            &:focus {
+                &:hover {
+                    color: $link-hover-color;
+                    color: yellow;
+                }
+            }
+        }
+        .dropdown-item {
+            color: rgb(0, 0, 0);
+        }
+        .dropdown-menu {
+            font-size: 20px;
+            --bs-dropdown-bg: $secondary-color;
+            --bs-dropdown-link-hover-bg: $link-hover-color;
+        }
+    }
+    .d-flex {
+        display: flex;
+        align-items: center;
+    }
+    .btn {
+        color: #ffffff;
+        --bs-btn-bg: $btn-bg-color;
+    }
+}

@@ -1,0 +1,98 @@
+/** HERO **/
+
+@media screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .img-novedad img {
+        width: 100%;
+
+    }
+
+    .novedad {
+        text-align: center;
+    }
+}
+
+/** SUSCRIBIRSE **/
+
+@media screen and (max-width: 768px) {
+    .container-1 {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .novedad,
+    .suscribir,
+    .presentacion__parrafo {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/** TARJETAS PRODUCTOS **/
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: 100%;
+
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .card {
+        width: 100%;
+
+    }
+}
+
+/** PAGE GALERIA **/
+
+@media screen and (max-width: 480px) {
+    .imagen_final {
+        grid-column-end: span 2;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .imagen_alta {
+        grid-row-end: span 2;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logos {
+        grid-column-end: span 2;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    section .grid_galeria {
+        grid-template-columns: 1 1fr;
+
+    }
+}
+
+@media screen and (max-width: 480px) {
+    section .grid_galeria {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/** PAGE NOSOTROS **/
+
+@media screen and (max-width: 480px) {
+    .nosotros p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .mapa {
+        max-width: 100%;
+    }
+
+}

@@ -1,0 +1,32 @@
+.footer{
+    background-image: url(../img/prism.png);
+    .logo{
+        display: flex;
+        h6{
+            font-size: 30px;
+            font-family: 'Inter', sans-serif;
+            color: #dbdbdb;
+        }
+    }
+    .footer-container{
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        padding-left: 10%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        .iconos{
+            display: flex;
+            padding-right: 15%;
+            a{
+                padding: 2%;
+            }
+        }
+    }
+    p{
+        color: #dbdbdb;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        margin-bottom: 0%;
+    }
+}

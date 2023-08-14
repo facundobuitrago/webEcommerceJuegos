@@ -1,23 +1,18 @@
-/**! HEADER **/
+/*! TIPOGRAFIA **/ 
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Press+Start+2P&display=swap');
+
+/*! RESET **/
 * {
     margin: 0;
     padding: 0;
 }
 
-/* BOOTSTRAP HEADER */ 
+/**! HEADER **/
 
+/* BOOTSTRAP HEADER */ 
 header nav {
     background-image: url(../img/prism.png);
-}
-
-header .navbar-brand .logo {
-    width: 50px;
-    display: inline-block;
-}
-
-header .navbar {
-    --bs-navbar-brand-margin-end: 20%;
 }
 
 header nav .navbar-brand {
@@ -27,8 +22,14 @@ header nav .navbar-brand {
     margin-left: 10px;
 }
 
-.navbar-brand:hover {
-    color: #dbdbdb;
+header .navbar-brand .logo {
+    width: 50px;
+    display: inline-block;
+
+}
+
+header .navbar {
+    --bs-navbar-brand-margin-end: 20%;
 }
 
 header nav .navbar-brand span {
@@ -38,6 +39,10 @@ header nav .navbar-brand span {
 header nav .collapse .navbar-collapse ul li a {
     color: #dbdbdb;
 
+}
+
+.navbar-brand:hover {
+    color: #dbdbdb;
 }
 
 .nav-link:focus .nav-link:hover {
@@ -134,46 +139,6 @@ ul .dropdown-menu {
         text-align: center;
     }
 }
-
-.varios ul {
-
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.varios img {
-    width: 80px;
-    margin: 10%;
-}
-
-/** RESEÑAS CLIENTES **/
-
-.review {
-    display: inline;
-    align-items: center;
-}
-
-.review p {
-    font-family: 'Inter', sans-serif;
-    color: black;
-    font-weight: 900;
-    font-size: 20px;
-    padding: 50px;
-}
-
-.review img {
-    display: block;
-    margin: 0 auto;
-    padding-bottom: 20px;
-}
-
-.comment {
-    margin-left: 10px;
-}
-
-
 /** SUSCRIBIRSE **/
 
 .container-1 {
@@ -185,6 +150,15 @@ ul .dropdown-menu {
     background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(60, 37, 73, 1) 17%, rgba(0, 0, 0, 1) 49%, rgba(55, 37, 90, 1) 85%, rgba(255, 255, 255, 1) 100%);
 }
 
+.container-1 .presentacion__parrafo p {
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    color: rgb(174, 174, 174);
+    font-size: 20px;
+    font-weight: bold;
+}
+
 .container-1 .suscribir p {
     padding: 20px;
     font-family: 'Inter', sans-serif;
@@ -194,22 +168,6 @@ ul .dropdown-menu {
     padding-bottom: 0%;
 
 }
-
-@media screen and (max-width: 768px) {
-    .container-1 {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-
-    .novedad,
-    .suscribir,
-    .presentacion__parrafo {
-        width: 100%;
-        text-align: center;
-    }
-}
-
 .suscribir a {
     font-family: 'Inter', sans-serif;
     background-color: rgb(174, 88, 255);
@@ -227,46 +185,19 @@ ul .dropdown-menu {
     background-color: rgb(184, 139, 226);
 }
 
-.container-1 .presentacion__parrafo p {
-    margin-top: 30px;
-    text-align: center;
-    font-family: 'Inter', sans-serif;
-    color: rgb(174, 174, 174);
-    font-size: 20px;
-    font-weight: bold;
-}
+@media screen and (max-width: 768px) {
+    .container-1 {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
 
-/** MAS VENDIDOS **/
-
-h2 {
-    font-family: 'Inter', sans-serif;
-    font-size: 30px;
-    color: white;
-    background-color: rgb(174, 88, 255);
-    border-radius: 20px;
-    margin: 20px;
-    text-align: center;
-}
-
-.popular {
-    margin: 20px;
-}
-
-.popular h2 {
-    font-family: 'Inter', sans-serif;
-    font-size: 30px;
-    color: white;
-    background-color: rgb(174, 88, 255);
-    border-radius: 20px;
-    margin: 20px;
-    text-align: center;
-}
-
-.popular p {
-    text-align: center;
-    color: black;
-    font-family: 'Inter', sans-serif;
-    font-size: 20px;
+    .novedad,
+    .suscribir,
+    .presentacion__parrafo {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 /**! PRODUCTOS TARJETAS **/
@@ -322,18 +253,71 @@ h2 {
 }
 
 
+/** MAS VENDIDOS **/
+
+h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    color: white;
+    background-color: rgb(174, 88, 255);
+    border-radius: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+.popular {
+    margin: 20px;
+}
+
+.popular p {
+    text-align: center;
+    color: black;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+}
+
+.varios ul {
+
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.varios img {
+    width: 80px;
+    margin: 10%;
+}
+
+/** RESEÑAS CLIENTES **/
+
+.review {
+    display: inline;
+    align-items: center;
+}
+
+.review p {
+    font-family: 'Inter', sans-serif;
+    color: black;
+    font-weight: 900;
+    font-size: 20px;
+    padding: 50px;
+}
+
+.review img {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
 /**! PAGE GALERIA **/
 
-section .grid_galeria {
+.grid_galeria {
     display: grid;
     grid-template-columns: repeat(3, 3fr);
     grid-gap: 10px;
     justify-content: center;
     margin: 20px auto;
-}
-
-.grid_galeria {
-
     text-align: center;
     width: 100%;
     height: 100%;
@@ -383,7 +367,7 @@ section .grid_galeria {
 
 /**! PAGE NOSOTROS **/
 
-section .nosotros {
+.nosotros {
     font-family: 'Inter', sans-serif;
     color: black;
     font-size: 20px;
@@ -425,13 +409,7 @@ section .nosotros {
 
 /**! PAGE CONTACTO **/
 
-.contacto_css {
-
-    font-family: 'Inter', sans-serif;
-    background-color: #ffffff;
-}
-
-.contacto_css {
+.contacto_css { 
     height: 100%;
     font-family: 'Noto Sans', sans-serif;
     background-image: url(../img/fondo1.jpg);
@@ -491,15 +469,6 @@ label {
     color: #fff;
 }
 
-span {
-    color: #ab4493;
-}
-
-.aviso {
-    font-size: 13px;
-    color: #0e0e0e;
-}
-
 h1 {
     font-size: 39px;
     text-align: center;
@@ -518,6 +487,17 @@ p {
     color: #0e0e0e;
 }
 
+span {
+    color: #ab4493;
+}
+
+.aviso {
+    font-size: 13px;
+    color: #0e0e0e;
+}
+
+
+
 ::placeholder {
     color: #a8a8a8;
 }
@@ -530,21 +510,18 @@ textarea:focus {
 
 /*! LOGIN */
 
-body .signupFrm {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-color: white;
-    font-family: "lato", sans-serif;
-}
 
 .signupFrm {
+    height: 100vh;
+    font-family: 'Noto Sans', sans-serif;
+    background-image: url(../img/fondo1.jpg);
+    background-position: center;
+    background-repeat:repeat;
+    background-size: contain;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
-
 
 .form {
     background-color: white;
@@ -581,6 +558,28 @@ body .signupFrm {
     z-index: 1;
 }
 
+.input:focus+.label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+    color: purple;
+    background-color: transparent;
+}
+
+.input:not(:placeholder-shown)+.label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+.input:focus {
+    border: 2px solid purple;
+}
 
 .label {
     position: absolute;
@@ -615,31 +614,6 @@ body .signupFrm {
     background-color: #9867C5;
     transform: translateY(-2px);
 }
-
-.input:focus+.label {
-    top: -7px;
-    left: 3px;
-    z-index: 10;
-    font-size: 14px;
-    font-weight: 600;
-    color: purple;
-    background-color: transparent;
-}
-
-.input:not(:placeholder-shown)+.label {
-    top: -7px;
-    left: 3px;
-    z-index: 10;
-    font-size: 14px;
-    font-weight: 600;
-
-}
-
-.input:focus {
-    border: 2px solid purple;
-}
-
-
 
 /** WHATSAPP **/
 
