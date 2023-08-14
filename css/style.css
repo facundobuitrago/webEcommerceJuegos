@@ -5,6 +5,12 @@
     padding: 0;
 }
 
+/* BOOTSTRAP HEADER */ 
+
+header nav {
+    background-image: url(../img/prism.png);
+}
+
 header .navbar-brand .logo {
     width: 50px;
     display: inline-block;
@@ -27,10 +33,6 @@ header nav .navbar-brand {
 
 header nav .navbar-brand span {
     font-weight: bold;
-}
-
-header nav {
-    background-image: url(../img/prism.png);
 }
 
 header nav .collapse .navbar-collapse ul li a {
@@ -133,6 +135,45 @@ ul .dropdown-menu {
     }
 }
 
+.varios ul {
+
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.varios img {
+    width: 80px;
+    margin: 10%;
+}
+
+/** RESEÑAS CLIENTES **/
+
+.review {
+    display: inline;
+    align-items: center;
+}
+
+.review p {
+    font-family: 'Inter', sans-serif;
+    color: black;
+    font-weight: 900;
+    font-size: 20px;
+    padding: 50px;
+}
+
+.review img {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.comment {
+    margin-left: 10px;
+}
+
+
 /** SUSCRIBIRSE **/
 
 .container-1 {
@@ -195,50 +236,7 @@ ul .dropdown-menu {
     font-weight: bold;
 }
 
-/** PRODUCTOS DESTACADOS **/
-
-h4 {
-    text-align: left;
-    font-size: 35px;
-    font-family: 'Inter', sans-serif;
-    margin-bottom: 30px;
-    color: black;
-    text-align: center;
-    margin: 5%;
-}
-
-
 /** MAS VENDIDOS **/
-.popular {
-    margin: 20px;
-}
-
-.popular h2 {
-    font-family: 'Inter', sans-serif;
-    font-size: 30px;
-}
-
-.popular p {
-    text-align: center;
-    color: black;
-    font-family: 'Inter', sans-serif;
-    font-size: 20px;
-    font-weight: 900;
-    padding: 30px;
-}
-
-.mas-vendidos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.mas-vendidos img {
-    flex: 0 0 auto;
-    border: 5px solid rgb(192, 169, 37);
-    border-radius: 15px;
-    box-sizing: border-box;
-}
 
 h2 {
     font-family: 'Inter', sans-serif;
@@ -250,36 +248,39 @@ h2 {
     text-align: center;
 }
 
-.varios ul {
-
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.popular {
+    margin: 20px;
 }
 
-.varios img {
-    width: 80px;
-    margin: 10%;
+.popular h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    color: white;
+    background-color: rgb(174, 88, 255);
+    border-radius: 20px;
+    margin: 20px;
+    text-align: center;
 }
 
-/**! PAGE PRODUCTOS **/
+.popular p {
+    text-align: center;
+    color: black;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+}
 
-.productos__dropdown {
+/**! PRODUCTOS TARJETAS **/
+
+.productos {
 
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     margin: 5%;
-}
-
-.productos__dropdown {
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-/** TARJETAS DE PRODUCTOS **/
+/** BOOTSTRAP TARJETAS DE PRODUCTOS **/
 
 .card {
     width: 18rem;
@@ -320,32 +321,6 @@ h2 {
     }
 }
 
-/** RESEÑAS CLIENTES **/
-
-.review {
-
-    display: inline;
-    align-items: center;
-
-}
-
-.review p {
-    font-family: 'Inter', sans-serif;
-    color: black;
-    font-weight: 900;
-    font-size: 20px;
-    padding: 50px;
-}
-
-.review img {
-    display: block;
-    margin: 0 auto;
-    padding-bottom: 20px;
-}
-
-.comment {
-    margin-left: 10px;
-}
 
 /**! PAGE GALERIA **/
 
@@ -543,12 +518,10 @@ p {
     color: #0e0e0e;
 }
 
-/* Placeholder en Chrome */
 ::placeholder {
     color: #a8a8a8;
 }
 
-/* Estilos para el foco en los campos */
 input:focus,
 textarea:focus {
     outline: 0;
@@ -684,7 +657,6 @@ body .signupFrm {
 /** FOOTER **/
 
 footer {
-
     background-image: url(../img/prism.png);
 }
 
