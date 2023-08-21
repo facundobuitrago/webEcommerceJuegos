@@ -1,0 +1,28 @@
+$primary-color: #ffffff;
+$secondary-color: #ffd400d9;
+$tertiary-color: rgb(174, 88, 255);
+$link-hover-color: #7e31dd4f;
+$navbar-bg-color: rgba(138, 138, 138, 0.548);
+$btn-bg-color: #00000045;
+
+/** LISTAS */ 
+
+$font-size: 10px, 20px, 30px, 40px, 50px;
+
+$boton: (
+    bg-boton: rgb(174, 88, 255),
+    border-boton: 2px solid black,
+    color-text: #ffffff,
+);
+
+/** EXTENS */ 
+
+%flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+

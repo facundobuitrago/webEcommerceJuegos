@@ -1,81 +1,88 @@
 .hero {
-    .novedad{
+
+    .novedad {
         text-align: center;
         font-family: 'Inter', sans-serif;
         font-size: 20px;
         color: black;
         background-image: url(../img/fondo1.jpg);
-        background-attachment: fixed;
-        background-size: cover;
+        background-position: center;
+        background-size: contain;
+        align-items: center;
         flex-wrap: wrap;
 
-        h3{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: rgb(253, 229, 15);
+        h3 {
+            font-size: nth($font-size, 3);
+            color: yellow;
             font-weight: bold;
             font-style: italic;
             flex-wrap: wrap;
+            @extend %flex;
+
+
         }
-        a{
+
+        a {
             font-family: 'Inter', sans-serif;
-            background-color: rgb(174, 88, 255);
-            color: #dbdbdb;
             padding: 15px;
             border-radius: 20px;
-            border-style: solid;
-            border-color: black;
             text-decoration: none;
 
-            &:hover{
+            &:hover {
                 background-color: rgb(184, 139, 226);
             }
         }
     }
+
     .container-1 {
         margin-top: 30px;
         display: flex;
         justify-content: start;
         align-items: center;
-        background: rgb(255, 255, 255);
-        background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(60, 37, 73, 1) 17%, rgba(0, 0, 0, 1) 49%, rgba(55, 37, 90, 1) 85%, rgba(255, 255, 255, 1) 100%);
+        background: rgb(255,255,255);
+        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(10,6,22,0.7791491596638656) 20%, rgba(0,0,0,1) 50%, rgba(10,6,22,0.7931547619047619) 80%, rgba(255,255,255,1) 100%);
 
         .presentacion__parrafo {
-            
-            p{
-                margin-top: 30px;
+            .welcome {
+                color: $secondary-color;
+            }
+
+            p {
                 text-align: center;
                 font-family: 'Inter', sans-serif;
                 color: rgb(174, 174, 174);
                 font-size: 20px;
                 font-weight: bold;
+                margin-left: 10%;
             }
         }
-        .suscribir{
-            p{
+
+        .suscribir {
+        
+            p {
                 padding: 20px;
                 font-family: 'Inter', sans-serif;
-                font-size: medium;
+                font-size: nth($font-size, 2);
                 color: #e3d267;
                 margin: 5%;
                 padding-bottom: 0%;
+                text-align: center;
+
             }
-            a{
+            a {
                 font-family: 'Inter', sans-serif;
-                background-color: rgb(174, 88, 255);
-                color: #dbdbdb;
                 padding: 20px;
                 border-radius: 20px;
                 display: inline-block;
                 text-decoration: none;
-                margin: 50px;
+                margin: 25%;
                 margin-bottom: 50px;
                 margin-top: 0%;
 
-                    &:hover{
-                        background-color: rgb(184, 139, 226);
-                    }
+                &:hover {
+                    background-color: rgb(184, 139, 226);
+                    
+                }
             }
         }
     }
@@ -83,25 +90,33 @@
 
 .productos {
 
-    .card{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    .card {
         width: 18rem;
         margin-bottom: 20px;
         text-align: center;
-        box-shadow: 10px 10px 31px -8px rgba(0, 0, 0.75);
-        -webkit-box-shadow: 10px 10px 31px -8px rgba(0, 0, 0.75);
-        -moz-box-shadow: 10px 10px 31px -8px rgba(0, 0, 0.75);
-        
-        .card-img-top{
+        box-shadow: 10px 10px 31px -8px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 10px 10px 31px -8px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 31px -8px rgba(0, 0, 0, 0.75);
+
+        .card-img-top {
             height: 230px;
             object-fit: contain;
 
         }
+
         .card-body {
 
-            a{
+            a {
                 text-decoration: none;
             }
         }
+
         .card-text {
             color: rgb(53, 196, 53);
             text-align: center;
@@ -112,49 +127,32 @@
 
 .popular {
     margin: 20px;
-    p{
+
+    p {
         text-align: center;
-        color: black;
+        color: $primary-color;
         font-family: 'Inter', sans-serif;
         font-size: 20px;
     }
 }
 
 .varios {
-    ul{
+    ul {
         list-style: none;
         display: flex;
         justify-content: space-around;
         align-items: center;
-        img{
+
+        img {
             width: 80px;
             margin: 10%;
         }
     }
 }
 
-.review {
-    display: inline;
-    align-items: center;
-    p{
-        font-family: 'Inter', sans-serif;
-        color: black;
-        font-weight: 900;
-        font-size: 20px;
-        padding: 50px;
-
-    }
-    img{
-        display: block;
-        margin: 0 auto;
-        padding-bottom: 20px;
-
-    }
-}
-
 /** PAGE GALERIA **/
 
-.grid_galeria{
+.grid_galeria {
     display: grid;
     grid-template-columns: repeat(3, 3fr);
     grid-gap: 10px;
@@ -164,14 +162,15 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
-    .img_galeria{
-        img{
+
+    .img_galeria {
+        img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            box-shadow: 10px 10px 31px -8px rgba(0, 0, 0.75);
-            -webkit-box-shadow: 10px 10px 31px -8px rgba(0, 0, 0.75);
-            -moz-box-shadow: 10px 10px 31px -8px rgba(0, 0, 0.75);
+            box-shadow: 10px 10px 31px -8px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 10px 10px 31px -8px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 10px 10px 31px -8px rgba(0, 0, 0, 0.75);
         }
     }
 }
@@ -180,26 +179,39 @@
 
 .nosotros {
     font-family: 'Inter', sans-serif;
-    color: black;
     font-size: 20px;
-    margin: 80%;
-    padding: 30px;
-    display: inline;
-    text-align: center;
-    p{
-        font-weight: bold;
+    display: flex;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: start;
+
+    .titulo,
+    .parrafo {
+        flex: 1;
+        font-weight: bolder;
         text-align: center;
         font-family: 'Inter', sans-serif;
-        color: rgb(0, 0, 0);
+        color: black;
         font-size: 20px;
+        padding: 20px;
+        
+    }
+
+    .titulo {
         font-weight: bold;
-        margin: 10%;
+       
+    }
+
+    .parrafo {
+        font-weight: normal;
+        
     }
 }
-.mapa{
-    display: flex;
-    align-content: center;
-    justify-content: center;
+
+.mapa {
+    @extend %flex;
+   
 }
 
 /** PAGE CONTACTO **/
@@ -207,72 +219,81 @@
 .contacto_css {
     height: 100%;
     font-family: 'Noto Sans', sans-serif;
-    background-image: url(../img/fondo1.jpg);
-    background-position: center;
-    background-repeat: repeat;
-    background-size: contain;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .contact_form{
+    background-image: url(../img/fondo_oscuro.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    @extend %flex;
+
+    .contact_form {
         width: 100%;
         max-width: 460px;
         border-radius: 10px;
         padding: 30px;
-        background-color: #fbfbfb;
-        .formulario{
-            input,textarea{
+        background-color: $primary-color;
+
+        .formulario {
+
+            input,
+            textarea {
                 width: 100%;
                 height: 40px;
                 padding: 10px;
                 border-radius: 5px;
-                border: 1px solid #ab4493;
+                border: 1px solid $tertiary-color;
                 margin-top: 10px;
                 margin-bottom: 20px;
             }
-            textarea{
+
+            textarea {
                 height: 150px;
                 padding-top: 15px;
             }
-            label{
+
+            label {
                 display: block;
                 text-align: center;
 
             }
-            button{
+
+            button {
                 height: 45px;
                 padding-left: 5px;
                 padding-right: 5px;
                 margin-bottom: 20px;
                 margin-top: 10px;
                 text-transform: uppercase;
-                background-color: #ab4493;
-                border-color: #ab4493;
+                background-color: black;
+                border-color: $tertiary-color;
                 border-style: solid;
                 border-radius: 10px;
                 width: 100%;
                 cursor: pointer;
 
-                p{
-                    color: #fff;
+                p {
+                    color: $primary-color;
+                    padding-top: 10px;
                 }
             }
-            h1{
-                font-size: 39px;
+
+            h1 {
+                font-size: nth($font-size, 4);
                 text-align: center;
                 padding-bottom: 20px;
-                color: #ab4493;
+                color: black;
             }
-            h3{
+
+            h3 {
                 font-size: 16px;
                 padding-bottom: 30px;
                 color: #0e0e0e;
             }
-            p{
+
+            p {
                 font-size: 14px;
                 color: #0e0e0e;
 
             }
+
             .aviso {
                 font-size: 13px;
                 color: #0e0e0e;
@@ -282,7 +303,7 @@
             ::placeholder {
                 color: #a8a8a8;
             }
-            
+
             input:focus,
             textarea:focus {
                 outline: 0;
@@ -301,33 +322,35 @@
     font-family: 'Noto Sans', sans-serif;
     background-image: url(../img/fondo1.jpg);
     background-position: center;
-    background-repeat:repeat;
+    background-repeat: repeat;
     background-size: contain;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    form{
+    @extend %flex;
+
+    form {
         background-color: white;
         width: 400px;
         border-radius: 8px;
         padding: 20px 40px;
         box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
-        .title{
+
+        .title {
             font-size: 50px;
             margin-bottom: 50px;
         }
-        .inputContainer{
+
+        .inputContainer {
             position: relative;
             height: 45px;
             width: 90%;
             margin-bottom: 17px;
-            input{
+
+            input {
                 position: absolute;
                 top: 0px;
                 left: 0px;
                 height: 100%;
                 width: 100%;
-                border: 1px solid #DADCE0;
+                border: 1px solid $tertiary-color;
                 border-radius: 7px;
                 font-size: 16px;
                 padding: 0 20px;
@@ -335,7 +358,7 @@
                 background: none;
                 z-index: 1;
 
-                &:focus+.label{
+                &:focus+.label {
                     top: -7px;
                     left: 3px;
                     z-index: 10;
@@ -345,33 +368,38 @@
                     background-color: transparent;
 
                 }
-                &:not(:placeholder-shown)+.label{
+
+                &:not(:placeholder-shown)+.label {
                     top: -7px;
                     left: 3px;
                     z-index: 10;
                     font-size: 14px;
                     font-weight: 600;
                 }
-                &:focus{
+
+                &:focus {
                     border: 2px solid purple;
                 }
             }
-            .label{
+
+            .label {
                 position: absolute;
                 top: 15px;
                 left: 15px;
                 padding: 0 4px;
                 background-color: white;
-                color: #DADCE0;
+                color: grey;
                 font-size: 16px;
                 transition: 0.5s;
                 z-index: 0;
             }
+
             ::placeholder {
                 color: transparent;
             }
         }
-        .submitBtn{
+
+        .submitBtn {
             display: block;
             margin-left: auto;
             padding: 15px 30px;
@@ -382,23 +410,11 @@
             cursor: pointer;
             font-size: 16px;
             margin-top: 30px;
-                &:hover{
-                    background-color: #9867C5;
-                    transform: translateY(-2px);
-                }
+
+            &:hover {
+                background-color: #9867C5;
+                transform: translateY(-2px);
             }
         }
     }
-
-/** WHATSAPP **/
-
-.fixed{
-    position: fixed;
-    bottom: 25%;
-    right: 5%;
-
-    img{
-        width: 50px;
-    }
 }
-

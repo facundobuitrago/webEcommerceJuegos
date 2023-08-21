@@ -84,15 +84,29 @@
 
 /** PAGE NOSOTROS **/
 
-@media screen and (max-width: 480px) {
-    .nosotros p {
-        font-size: 15px;
+
+@media (min-width: 768px) {
+
+    .nosotros {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .titulo,
+    .parrafo {
+        flex: 1;
+        padding: 50px;
     }
 }
 
-@media screen and (max-width: 480px) {
-    .mapa {
-        max-width: 100%;
+@media (max-width: 990px) {
+    .nosotros {
+        flex-direction: column;
+        align-items: center;
     }
 
+    .titulo,
+    .parrafo {
+        padding: 20px;
+    }
 }

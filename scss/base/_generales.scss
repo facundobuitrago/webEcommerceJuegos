@@ -1,4 +1,4 @@
-/*! TIPOGRAFIA **/ 
+/*! TIPOGRAFIA **/
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Press+Start+2P&display=swap');
 
@@ -8,17 +8,54 @@
     padding: 0;
 }
 
-h2 {
-    font-family: 'Inter', sans-serif;
-    font-size: 30px;
-    color: white;
-    background-color: rgb(174, 88, 255);
-    border-radius: 20px;
-    margin: 20px;
-    text-align: center;
+body {
+
+    
+    h2 {
+        font-family: 'Inter', sans-serif;
+        font-size: 30px;
+        color: $primary-color;
+        border-radius: 20px;
+        margin: 20px;
+        text-align: center;
+        background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(10,6,22,0.7791491596638656) 20%, rgba(0,0,0,1) 50%, rgba(10,6,22,0.7931547619047619) 80%, rgba(255,255,255,1) 100%);
+        
+    }
+
+}
+span {
+    color: $tertiary-color;
+    font-weight: bold;
 }
 
-span {
-    color: rgb(174, 88, 255);
-    font-weight: bold;
+/** WHATSAPP **/
+
+.fixed {
+    position: fixed;
+    bottom: 25%;
+    right: 5%;
+
+
+    a {
+
+        img {
+            width: 50px;
+            -webkit-transition: 0.5s linear;
+            transition: 0.5s linear;
+
+            &:hover {
+
+                -webkit-transform: scale(0.8);
+                transform: scale(0.8);
+            }
+        }
+    }
+
+}
+
+.boton {
+    background-color: map-get($boton, bg-boton);
+    border: map-get($boton, border-boton);
+    color: map-get($boton, color-text);
 }
