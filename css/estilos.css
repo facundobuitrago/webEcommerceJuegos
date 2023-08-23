@@ -71,7 +71,7 @@ header nav {
     font-family: 'Inter', sans-serif;
     margin-left: 10px; }
     header nav .navbar-brand .logo {
-      width: 50px;
+      width: 300px;
       display: inline-block; }
     header nav .navbar-brand span {
       font-weight: bold; }
@@ -254,8 +254,8 @@ header nav {
   font-family: 'Inter', sans-serif;
   font-size: 20px;
   display: flex;
+  background-size: auto;
   background-position: center;
-  background-size: contain;
   background-repeat: no-repeat;
   align-items: start; }
   .nosotros .titulo,
@@ -419,21 +419,18 @@ header nav {
 footer {
   background-image: url(../img/prism.png); }
   footer .logo {
-    display: flex; }
-  footer h6 {
-    font-size: 30px;
-    font-family: 'Inter', sans-serif;
-    color: #dbdbdb; }
+    width: 300px;
+    margin: 0% auto; }
   footer .footer-container {
     font-size: 15px;
     padding-left: 10%;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+    font-family: 'Inter', sans-serif; }
     footer .footer-container .iconos {
       padding-right: 10%; }
       footer .footer-container .iconos a {
         padding: 2%;
-        -webkit-transition: 1s linear;
-        transition: 1s linear; }
+        -webkit-transition: 0.5s linear;
+        transition: 0.5s linear; }
         footer .footer-container .iconos a:hover {
           -webkit-transform: scale(0.6);
           transform: scale(0.6); }
@@ -443,7 +440,8 @@ footer {
     align-items: flex-end;
     color: #ffffff;
     margin-bottom: 0%;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+    font-family: 'Inter', sans-serif;
+    font-weight: 300; }
 
 /** HERO **/
 @media screen and (max-width: 768px) {
