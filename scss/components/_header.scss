@@ -26,23 +26,6 @@ header {
 
 
 
-        .collapse {
-            .navbar-collapse {
-                ul {
-                    li {
-                        a {
-                            color: $primary-color;
-                        }
-                    }
-                }
-            }
-        }
-
-        .nav-link:focus,
-        .nav-link:hover {
-            color: var(--bs-nav-link-hover-color);
-            color: $tertiary-color;
-        }
 
         .navbar-toggler:focus {
             box-shadow: 0 0 4px rgba(0, 0, 0, 0.50);

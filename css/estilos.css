@@ -75,12 +75,6 @@ header nav {
       display: inline-block; }
     header nav .navbar-brand span {
       font-weight: bold; }
-  header nav .collapse .navbar-collapse ul li a {
-    color: #ffffff; }
-  header nav .nav-link:focus,
-  header nav .nav-link:hover {
-    color: var(--bs-nav-link-hover-color);
-    color: #ae58ff; }
   header nav .navbar-toggler:focus {
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.5); }
   header nav .navbar-toggler {
@@ -140,23 +134,25 @@ header nav {
   justify-content: start;
   align-items: center;
   margin-top: 30px;
+  padding: 5%;
   background: white;
   background: linear-gradient(180deg, white 0%, rgba(10, 6, 22, 0.779149) 20%, black 50%, rgba(10, 6, 22, 0.793155) 80%, white 100%); }
   .hero .container-1 .presentacion__parrafo .welcome {
-    color: #ffd500; }
+    color: black;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900; }
   .hero .container-1 .presentacion__parrafo p {
     text-align: center;
     font-family: 'Inter', sans-serif;
     color: #aeaeae;
     font-size: 20px;
-    font-weight: bold;
-    margin-left: 10%; }
+    font-weight: bold; }
   .hero .container-1 .suscribir p {
     padding: 20px;
     font-family: 'Inter', sans-serif;
     font-size: 20px;
     color: #e3d267;
-    margin: 5%;
+    margin: 0%;
     padding-bottom: 0%;
     text-align: center; }
   .hero .container-1 .suscribir a {

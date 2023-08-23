@@ -35,12 +35,15 @@
     .container-1 {
         @include flex (flex, start, center);
         margin-top: 30px;
+        padding: 5%;
         background: rgb(255, 255, 255);
         background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(10, 6, 22, 0.7791491596638656) 20%, rgba(0, 0, 0, 1) 50%, rgba(10, 6, 22, 0.7931547619047619) 80%, rgba(255, 255, 255, 1) 100%);
 
         .presentacion__parrafo {
             .welcome {
-                color: $secondary-color;
+                color: black;
+                font-family: 'Inter', sans-serif;
+                font-weight: 900;
             }
 
             p {
@@ -49,7 +52,6 @@
                 color: rgb(174, 174, 174);
                 font-size: 20px;
                 font-weight: bold;
-                margin-left: 10%;
             }
         }
 
@@ -60,7 +62,7 @@
                 font-family: 'Inter', sans-serif;
                 font-size: nth($font-size, 2);
                 color: #e3d267;
-                margin: 5%;
+                margin: 0%;
                 padding-bottom: 0%;
                 text-align: center;
 
