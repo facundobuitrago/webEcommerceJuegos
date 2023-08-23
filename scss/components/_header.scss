@@ -38,14 +38,10 @@ header {
             }
         }
 
-        .navbar-brand:hover {
-            color: $primary-color;
-        }
-
         .nav-link:focus,
         .nav-link:hover {
             color: var(--bs-nav-link-hover-color);
-            color: yellow;
+            color: $tertiary-color;
         }
 
         .navbar-toggler:focus {
@@ -62,14 +58,14 @@ header {
         }
 
         .dropdown-item {
-            color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
         }
 
         ul {
             .dropdown-menu {
                 font-size: 20px;
-                --bs-dropdown-bg: #ffd400d9;
-                --bs-dropdown-link-hover-bg: #7e31dd4f;
+                --bs-dropdown-bg: #000000d9;
+                --bs-dropdown-link-hover-bg: #fbff0dd5;
             }
         }
 

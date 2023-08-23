@@ -77,12 +77,10 @@ header nav {
       font-weight: bold; }
   header nav .collapse .navbar-collapse ul li a {
     color: #ffffff; }
-  header nav .navbar-brand:hover {
-    color: #ffffff; }
   header nav .nav-link:focus,
   header nav .nav-link:hover {
     color: var(--bs-nav-link-hover-color);
-    color: yellow; }
+    color: #ae58ff; }
   header nav .navbar-toggler:focus {
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.5); }
   header nav .navbar-toggler {
@@ -91,11 +89,11 @@ header nav {
     color: #ffffff;
     font-size: 20px; }
   header nav .dropdown-item {
-    color: black; }
+    color: white; }
   header nav ul .dropdown-menu {
     font-size: 20px;
-    --bs-dropdown-bg: #ffd400d9;
-    --bs-dropdown-link-hover-bg: #7e31dd4f; }
+    --bs-dropdown-bg: #000000d9;
+    --bs-dropdown-link-hover-bg: #fbff0dd5; }
   header nav .d-flex {
     display: flex;
     align-items: center; }
