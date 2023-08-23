@@ -36,10 +36,8 @@ footer {
     }
 
     p {
-        color: $primary-color;        ;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
+        @include flex(flex, center, flex-end);
+        color: $primary-color;
         margin-bottom: 0%;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }

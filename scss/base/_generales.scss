@@ -1,8 +1,8 @@
-/*! TIPOGRAFIA **/
+/*! TIPOGRAFIA */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Press+Start+2P&display=swap');
 
-/*! RESET **/
+/*! RESET */
 * {
     margin: 0;
     padding: 0;
@@ -10,26 +10,30 @@
 
 body {
 
-    
+
     h2 {
+        @include button-styles;
         font-family: 'Inter', sans-serif;
         font-size: 30px;
+        padding: 2%;
         color: $primary-color;
-        border-radius: 20px;
-        margin: 20px;
+        border-radius: 50px;
+        margin: 0 auto;
+        max-width: fit-content;
         text-align: center;
-        background: rgb(255,255,255);
-background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(10,6,22,0.7791491596638656) 20%, rgba(0,0,0,1) 50%, rgba(10,6,22,0.7931547619047619) 80%, rgba(255,255,255,1) 100%);
-        
+        background: rgb(255, 255, 255);
+        background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(10, 6, 22, 0.7791491596638656) 20%, rgba(0, 0, 0, 1) 50%, rgba(10, 6, 22, 0.7931547619047619) 80%, rgba(255, 255, 255, 1) 100%);
+
     }
 
 }
+
 span {
     color: $tertiary-color;
     font-weight: bold;
 }
 
-/** WHATSAPP **/
+/* WHATSAPP */
 
 .fixed {
     position: fixed;
