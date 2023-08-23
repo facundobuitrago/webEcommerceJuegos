@@ -71,6 +71,7 @@ header nav {
     font-family: 'Inter', sans-serif;
     margin-left: 10px; }
     header nav .navbar-brand .logo {
+      width: 300px;
       display: inline-block; }
     header nav .navbar-brand span {
       font-weight: bold; }
