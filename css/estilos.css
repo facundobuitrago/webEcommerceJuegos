@@ -214,8 +214,8 @@ header nav {
   align-items: center;
   list-style: none; }
   .varios ul img {
-    width: 80px;
-    margin: 10%; }
+    width: 100px;
+    margin: 0% auto; }
 
 /** PAGE GALERIA **/
 .grid_galeria {

@@ -132,10 +132,11 @@
     ul {
         @include flex(flex, space-around, center);
         list-style: none;
+        
 
         img {
-            width: 80px;
-            margin: 10%;
+            width: 100px;
+            margin: 0% auto;
         }
     }
 }
