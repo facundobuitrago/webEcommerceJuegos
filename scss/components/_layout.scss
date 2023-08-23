@@ -209,7 +209,7 @@
 
 .contacto_css {
     height: 100%;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
     background-image: url(../img/fondo_oscuro.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -220,7 +220,7 @@
         max-width: 460px;
         border-radius: 10px;
         padding: 30px;
-        background-color: $primary-color;
+        background-color: #0000001a;
 
         .formulario {
 
@@ -261,33 +261,36 @@
                 cursor: pointer;
 
                 p {
-                    color: $primary-color;
+                    color: rgb(176, 7, 255);
                     padding-top: 10px;
                 }
             }
 
             h1 {
-                font-size: nth($font-size, 4);
+                font-family:'Inter', sans-serif;
+                font-size: nth($font-size, 5);
                 text-align: center;
                 padding-bottom: 20px;
-                color: black;
+                color: rgb(176, 7, 255);
             }
 
             h3 {
                 font-size: 16px;
                 padding-bottom: 30px;
-                color: #0e0e0e;
+                color: #680aff;
             }
 
             p {
-                font-size: 14px;
-                color: #0e0e0e;
+                font-size: 20px;
+                font-weight: 600;
+                color: #680aff;
+            }
 
             }
 
             .aviso {
                 font-size: 13px;
-                color: #0e0e0e;
+                color: #ffffff;
 
             }
 
@@ -304,13 +307,12 @@
         }
     }
 
-}
 
 /** LOGIN **/
 
 .signupFrm {
     height: 100vh;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
     background-image: url(../img/fondo1.jpg);
     background-position: center;
     background-repeat: repeat;

@@ -269,7 +269,7 @@ header nav {
 /** PAGE CONTACTO **/
 .contacto_css {
   height: 100%;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   background-image: url(../img/fondo_oscuro.png);
   background-size: cover;
   background-repeat: no-repeat; }
@@ -278,7 +278,7 @@ header nav {
     max-width: 460px;
     border-radius: 10px;
     padding: 30px;
-    background-color: #ffffff; }
+    background-color: #0000001a; }
     .contacto_css .contact_form .formulario input,
     .contacto_css .contact_form .formulario textarea {
       width: 100%;
@@ -308,34 +308,36 @@ header nav {
       width: 100%;
       cursor: pointer; }
       .contacto_css .contact_form .formulario button p {
-        color: #ffffff;
+        color: #b007ff;
         padding-top: 10px; }
     .contacto_css .contact_form .formulario h1 {
-      font-size: 40px;
+      font-family: 'Inter', sans-serif;
+      font-size: 50px;
       text-align: center;
       padding-bottom: 20px;
-      color: black; }
+      color: #b007ff; }
     .contacto_css .contact_form .formulario h3 {
       font-size: 16px;
       padding-bottom: 30px;
-      color: #0e0e0e; }
+      color: #680aff; }
     .contacto_css .contact_form .formulario p {
-      font-size: 14px;
-      color: #0e0e0e; }
-    .contacto_css .contact_form .formulario .aviso {
+      font-size: 20px;
+      font-weight: 600;
+      color: #680aff; }
+    .contacto_css .contact_form .aviso {
       font-size: 13px;
-      color: #0e0e0e; }
-    .contacto_css .contact_form .formulario ::placeholder {
+      color: #ffffff; }
+    .contacto_css .contact_form ::placeholder {
       color: #a8a8a8; }
-    .contacto_css .contact_form .formulario input:focus,
-    .contacto_css .contact_form .formulario textarea:focus {
+    .contacto_css .contact_form input:focus,
+    .contacto_css .contact_form textarea:focus {
       outline: 0;
       border: 1px solid #97d848; }
 
 /** LOGIN **/
 .signupFrm {
   height: 100vh;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   background-image: url(../img/fondo1.jpg);
   background-position: center;
   background-repeat: repeat;
