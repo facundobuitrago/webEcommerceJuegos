@@ -45,7 +45,7 @@ span {
 /* WHATSAPP */
 .fixed {
   position: fixed;
-  bottom: 25%;
+  bottom: 5%;
   right: 5%; }
   .fixed a img {
     width: 50px;
