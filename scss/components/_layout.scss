@@ -10,14 +10,17 @@
         background-size: contain;
         align-items: center;
         flex-wrap: wrap;
+        overflow-x: hidden;
 
         h3 {
             @extend %flex;
-            font-size: nth($font-size, 3);
+            font-size: nth($font-size, 4);
             color: yellow;
+            text-decoration: lightness($color: #ffffff);
             font-weight: bold;
             font-style: italic;
             flex-wrap: wrap;
+            
 
 
 
@@ -29,6 +32,7 @@
             padding: 15px;
             border-radius: 20px;
             text-decoration: none;
+            
         }
     }
 
@@ -36,8 +40,8 @@
         @include flex (flex, start, center);
         margin-top: 30px;
         padding: 5%;
-        background: rgb(255, 255, 255);
-        background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(10, 6, 22, 0.7791491596638656) 20%, rgba(0, 0, 0, 1) 50%, rgba(10, 6, 22, 0.7931547619047619) 80%, rgba(255, 255, 255, 1) 100%);
+        background: rgba(255, 255, 255, 0.459);
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.295) 0%, rgba(10, 6, 22, 0.7791491596638656) 20%, rgba(0, 0, 0, 1) 50%, rgba(10, 6, 22, 0.7931547619047619) 80%, rgb(255, 255, 255) 100%);
 
         .presentacion__parrafo {
             .welcome {

@@ -104,10 +104,12 @@ header nav {
   background-position: center;
   background-size: contain;
   align-items: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  overflow-x: hidden; }
   .hero .novedad h3 {
-    font-size: 30px;
+    font-size: 40px;
     color: yellow;
+    text-decoration: 100%;
     font-weight: bold;
     font-style: italic;
     flex-wrap: wrap; }
@@ -135,8 +137,8 @@ header nav {
   align-items: center;
   margin-top: 30px;
   padding: 5%;
-  background: white;
-  background: linear-gradient(180deg, white 0%, rgba(10, 6, 22, 0.779149) 20%, black 50%, rgba(10, 6, 22, 0.793155) 80%, white 100%); }
+  background: rgba(255, 255, 255, 0.459);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.295) 0%, rgba(10, 6, 22, 0.779149) 20%, black 50%, rgba(10, 6, 22, 0.793155) 80%, white 100%); }
   .hero .container-1 .presentacion__parrafo .welcome {
     color: #ffd500;
     font-family: 'Inter', sans-serif;
