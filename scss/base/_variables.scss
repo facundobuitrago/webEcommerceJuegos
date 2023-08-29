@@ -1,9 +1,12 @@
 $primary-color: #ffffff;
 $secondary-color: #ffd500;
 $tertiary-color: rgb(174, 88, 255);
+$color-separador: #a8b2ffba;
+$color-letra-titulo: #0070ff;
 $link-hover-color: #7e31dd4f;
 $navbar-bg-color: rgba(138, 138, 138, 0.548);
 $btn-bg-color: #00000045;
+
 
 /* LISTAS */
 
@@ -39,11 +42,11 @@ $boton: (
     border-radius: 20px;
     text-decoration: none;
     outline: 1px solid;
-    outline-color: rgba(255, 255, 255, 0.151);
+    outline-color: #3669f747;
     transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
 
     &:hover {
-        box-shadow: inset 0 0 20px rgba(102, 49, 172, 0.5), 0 0 20px rgba(255, 189, 9, 0.644);
+        box-shadow: inset 0 0 20px rgba(102, 49, 172, 0.5), 0 0 20px rgba(165, 9, 255, 0.644);
         outline-color: rgba(49, 138, 172, 0);
         outline-offset: 80px;
         text-shadow: 1px 1px 6px #fff;
@@ -51,13 +54,14 @@ $boton: (
 }
 
 @mixin img-styles {
-    border-radius: 10px;
+    margin: 1px;
+    border-radius: 15px;
     background-color: #000000;
     -webkit-transition: 1s linear;
     transition: 0.5s linear;
 
     &:hover {
-        border-radius: 200px;
+        border-radius: 100px;
 
     }
 }

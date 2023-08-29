@@ -95,7 +95,13 @@
     .titulo,
     .parrafo {
         flex: 1;
-        padding: 50px;
+        padding: 22px;
+        display: flex;
+        align-items:initial;
+    }
+    .imagen-nosotros{
+        display: flex;
+        align-items: center;
     }
 }
 

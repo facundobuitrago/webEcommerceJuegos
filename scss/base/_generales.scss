@@ -16,16 +16,43 @@ body {
         font-family: 'Inter', sans-serif;
         font-size: 30px;
         padding: 2%;
-        color: $primary-color;
+        color: $color-letra-titulo;
         border-radius: 50px;
         margin: 0 auto;
+        margin-bottom: 30px;
+        margin-top: 10px;
         max-width: fit-content;
         text-align: center;
         background: rgb(255, 255, 255);
-        background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(10, 6, 22, 0.7791491596638656) 20%, rgba(0, 0, 0, 1) 50%, rgba(10, 6, 22, 0.7931547619047619) 80%, rgba(255, 255, 255, 1) 100%);
+        background: linear-gradient(180deg, #ab02f16e 0%, rgba(10, 6, 22, 0.7791491596638656) 20%, rgba(0, 0, 0, 1) 50%, rgba(10, 6, 22, 0.7931547619047619) 80%, #ab02f16e 100%);
 
     }
 
+}
+
+.triangle {
+    position: relative;
+    background: #2c3e50;
+    height: 5vh;
+}
+
+.triangle::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 30px 100px 0 100px;
+    border-color: #2c3e50 transparent transparent transparent;
+    left: 50%;
+    transform: translateX(-50%) translateY(20%);
+}
+
+.main-productos-abajo {
+
+    background-color: black;
+    padding: 30px;
 }
 
 span {

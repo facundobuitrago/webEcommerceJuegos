@@ -2,7 +2,7 @@
 /* MAPAS */
 /* EXTEND */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Press+Start+2P&display=swap");
-.hero .novedad h3, .mapa, .contacto_css, .signupFrm, footer .footer-container, footer .footer-container .iconos {
+.hero .novedad h3, .titulo, .mapa, .contacto_css, .signupFrm, footer .footer-container, footer .footer-container .iconos {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -20,23 +20,46 @@ body h2 {
   border-radius: 20px;
   text-decoration: none;
   outline: 1px solid;
-  outline-color: rgba(255, 255, 255, 0.151);
+  outline-color: #3669f747;
   transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
   font-family: 'Inter', sans-serif;
   font-size: 30px;
   padding: 2%;
-  color: #ffffff;
+  color: #0070ff;
   border-radius: 50px;
   margin: 0 auto;
+  margin-bottom: 30px;
+  margin-top: 10px;
   max-width: fit-content;
   text-align: center;
   background: white;
-  background: linear-gradient(180deg, white 0%, rgba(10, 6, 22, 0.779149) 20%, black 50%, rgba(10, 6, 22, 0.793155) 80%, white 100%); }
+  background: linear-gradient(180deg, #ab02f16e 0%, rgba(10, 6, 22, 0.779149) 20%, black 50%, rgba(10, 6, 22, 0.793155) 80%, #ab02f16e 100%); }
   body h2:hover {
-    box-shadow: inset 0 0 20px rgba(102, 49, 172, 0.5), 0 0 20px rgba(255, 189, 9, 0.644);
+    box-shadow: inset 0 0 20px rgba(102, 49, 172, 0.5), 0 0 20px rgba(165, 9, 255, 0.644);
     outline-color: rgba(49, 138, 172, 0);
     outline-offset: 80px;
     text-shadow: 1px 1px 6px #fff; }
+
+.triangle {
+  position: relative;
+  background: #2c3e50;
+  height: 5vh; }
+
+.triangle::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 100px 0 100px;
+  border-color: #2c3e50 transparent transparent transparent;
+  left: 50%;
+  transform: translateX(-50%) translateY(20%); }
+
+.main-productos-abajo {
+  background-color: black;
+  padding: 30px; }
 
 span {
   color: #ae58ff;
@@ -119,14 +142,14 @@ header nav {
     border-radius: 20px;
     text-decoration: none;
     outline: 1px solid;
-    outline-color: rgba(255, 255, 255, 0.151);
+    outline-color: #3669f747;
     transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
     font-family: 'Inter', sans-serif;
     padding: 15px;
     border-radius: 20px;
     text-decoration: none; }
     .hero .novedad a:hover {
-      box-shadow: inset 0 0 20px rgba(102, 49, 172, 0.5), 0 0 20px rgba(255, 189, 9, 0.644);
+      box-shadow: inset 0 0 20px rgba(102, 49, 172, 0.5), 0 0 20px rgba(165, 9, 255, 0.644);
       outline-color: rgba(49, 138, 172, 0);
       outline-offset: 80px;
       text-shadow: 1px 1px 6px #fff; }
@@ -163,7 +186,7 @@ header nav {
     border-radius: 20px;
     text-decoration: none;
     outline: 1px solid;
-    outline-color: rgba(255, 255, 255, 0.151);
+    outline-color: #3669f747;
     transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
     font-family: 'Inter', sans-serif;
     padding: 20px;
@@ -174,7 +197,7 @@ header nav {
     margin-bottom: 50px;
     margin-top: 0%; }
     .hero .container-1 .suscribir a:hover {
-      box-shadow: inset 0 0 20px rgba(102, 49, 172, 0.5), 0 0 20px rgba(255, 189, 9, 0.644);
+      box-shadow: inset 0 0 20px rgba(102, 49, 172, 0.5), 0 0 20px rgba(165, 9, 255, 0.644);
       outline-color: rgba(49, 138, 172, 0);
       outline-offset: 80px;
       text-shadow: 1px 1px 6px #fff; }
@@ -189,9 +212,9 @@ header nav {
     width: 18rem;
     margin-bottom: 20px;
     text-align: center;
-    box-shadow: 10px 10px 31px -8px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 10px 10px 31px -8px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 10px 10px 31px -8px rgba(0, 0, 0, 0.75); }
+    box-shadow: 10px 10px 31px -8px rgba(151, 151, 151, 0.76);
+    -webkit-box-shadow: 10px 10px 31px -8px rgba(131, 130, 130, 0.75);
+    -moz-box-shadow: 10px 10px 31px -8px rgba(141, 141, 141, 0.75); }
     .productos .card .card-img-top {
       height: 230px;
       object-fit: contain; }
@@ -232,7 +255,8 @@ header nav {
   height: 100%;
   overflow: hidden; }
   .grid_galeria .img_galeria img {
-    border-radius: 10px;
+    margin: 1px;
+    border-radius: 15px;
     background-color: #000000;
     -webkit-transition: 1s linear;
     transition: 0.5s linear;
@@ -243,30 +267,30 @@ header nav {
     -webkit-box-shadow: 10px 10px 31px -8px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 31px -8px rgba(0, 0, 0, 0.75); }
     .grid_galeria .img_galeria img:hover {
-      border-radius: 200px; }
+      border-radius: 100px; }
 
 /** PAGE NOSOTROS **/
-.nosotros {
-  font-family: 'Inter', sans-serif;
-  font-size: 20px;
-  display: flex;
-  background-size: auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  align-items: start; }
-  .nosotros .titulo,
-  .nosotros .parrafo {
-    flex: 1;
-    font-weight: bolder;
-    text-align: center;
+.imagen-nosotros {
+  flex: 1;
+  text-align: right;
+  padding: 20px;
+  overflow-x: hidden;
+  margin: 1px;
+  border-radius: 15px;
+  background-color: #000000;
+  -webkit-transition: 1s linear;
+  transition: 0.5s linear;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-sizing: border-box;
+  margin-bottom: 40px; }
+  .imagen-nosotros .parrafo {
+    color: #0070ff;
     font-family: 'Inter', sans-serif;
-    color: black;
-    font-size: 20px;
-    padding: 20px; }
-  .nosotros .titulo {
-    font-weight: bold; }
-  .nosotros .parrafo {
-    font-weight: normal; }
+    text-align: left; }
+  .imagen-nosotros:hover {
+    border-radius: 100px; }
 
 /** PAGE CONTACTO **/
 .contacto_css {
@@ -501,7 +525,12 @@ footer {
   .titulo,
   .parrafo {
     flex: 1;
-    padding: 50px; } }
+    padding: 22px;
+    display: flex;
+    align-items: initial; }
+  .imagen-nosotros {
+    display: flex;
+    align-items: center; } }
 
 @media (max-width: 990px) {
   .nosotros {
