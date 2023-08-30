@@ -60,6 +60,9 @@ body h2 {
 .main-productos-abajo {
   background-color: black;
   padding: 30px; }
+  .main-productos-abajo p {
+    color: white;
+    text-align: center; }
 
 span {
   color: #ae58ff;
@@ -270,27 +273,17 @@ header nav {
       border-radius: 100px; }
 
 /** PAGE NOSOTROS **/
-.imagen-nosotros {
-  flex: 1;
-  text-align: right;
-  padding: 20px;
-  overflow-x: hidden;
-  margin: 1px;
-  border-radius: 15px;
-  background-color: #000000;
-  -webkit-transition: 1s linear;
-  transition: 0.5s linear;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  box-sizing: border-box;
-  margin-bottom: 40px; }
-  .imagen-nosotros .parrafo {
-    color: #0070ff;
-    font-family: 'Inter', sans-serif;
-    text-align: left; }
-  .imagen-nosotros:hover {
-    border-radius: 100px; }
+.imagen-nosotros img {
+  max-width: 100%;
+  height: auto;
+  padding: 20px; }
+
+.imagen-nosotros .parrafo {
+  color: #070707;
+  font-family: 'Inter', sans-serif;
+  text-align: left;
+  flex-wrap: wrap;
+  font-size: 20px; }
 
 /** PAGE CONTACTO **/
 .contacto_css {
@@ -521,21 +514,23 @@ footer {
 @media (min-width: 768px) {
   .nosotros {
     flex-direction: row;
-    justify-content: center; }
+    justify-content: center;
+    align-items: center;
+    align-content: center; }
   .titulo,
   .parrafo {
     flex: 1;
-    padding: 22px;
+    padding: 29px;
     display: flex;
     align-items: initial; }
   .imagen-nosotros {
     display: flex;
     align-items: center; } }
 
-@media (max-width: 990px) {
-  .nosotros {
+@media screen and (max-width: 1330px) {
+  .imagen-nosotros {
+    display: flex;
     flex-direction: column;
     align-items: center; }
-  .titulo,
   .parrafo {
-    padding: 20px; } }
+    margin-top: 20px; } }

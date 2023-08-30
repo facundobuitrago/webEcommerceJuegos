@@ -174,27 +174,24 @@
 
 /** PAGE NOSOTROS **/
 
-.titulo{
+.titulo {
     @extend %flex;
 }
 
 .imagen-nosotros {
-    .parrafo{
-        color: $color-letra-titulo;
+
+    img{
+        max-width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+    .parrafo {
+        color: rgb(7, 7, 7);
         font-family: 'Inter', sans-serif;
         text-align: left;
-        
+        flex-wrap: wrap;
+        font-size: 20px;
     }
-    flex: 1;
-    text-align: right;
-    padding: 20px;
-    overflow-x: hidden;
-    @include img-styles;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    box-sizing: border-box;
-    margin-bottom: 40px;
 }
 
 .mapa {
