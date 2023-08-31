@@ -283,8 +283,9 @@ header nav {
   font-family: 'Inter', sans-serif;
   text-align: left;
   flex-wrap: wrap;
-  font-size: 20px;
-  padding: 10px; }
+  font-size: 20px; }
+  .imagen-nosotros .parrafo p {
+    padding: 10px; }
 
 /** PAGE CONTACTO **/
 .contacto_css {

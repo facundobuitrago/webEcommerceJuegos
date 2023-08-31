@@ -191,7 +191,10 @@
         text-align: left;
         flex-wrap: wrap;
         font-size: 20px;
-        padding: 10px;
+        p{
+            padding: 10px;
+        }
+        
     }
 }
 
