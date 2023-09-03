@@ -1,120 +1,140 @@
 /** HERO **/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
     .hero {
+        display: flex;
         flex-direction: column;
-    }
+        align-items: center;
 
-    .img-novedad img {
-        width: 100%;
+        .img-novedad img {
+            width: 100%;
 
-    }
+        }
 
-    .novedad {
-        text-align: center;
+        .novedad {
+            text-align: center;
+        }
     }
 }
+
 
 /** SUSCRIBIRSE **/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 880px) {
     .container-1 {
         display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-
-    .novedad,
-    .suscribir,
-    .presentacion__parrafo {
-        width: 100%;
-        text-align: center;
-    }
-}
-
-/** TARJETAS PRODUCTOS **/
-
-@media screen and (max-width: 768px) {
-    .card {
-        width: 100%;
-
-    }
-}
-
-@media screen and (max-width: 450px) {
-    .card {
-        width: 100%;
-
-    }
-}
-
-/** PAGE GALERIA **/
-
-@media screen and (max-width: 480px) {
-    .imagen_final {
-        grid-column-end: span 2;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .imagen_alta {
-        grid-row-end: span 2;
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .logos {
-        grid-column-end: span 2;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    section .grid_galeria {
-        grid-template-columns: 1 1fr;
-
-    }
-}
-
-@media screen and (max-width: 480px) {
-    section .grid_galeria {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-/** PAGE NOSOTROS **/
-
-
-@media (min-width: 768px ) {
-
-    .nosotros {
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        align-content: center;
+        padding: 5px;
+
+        p {
+            font-size: 15px;
+        }
+
+        .novedad,
+        .suscribir,
+        .presentacion__parrafo p {
+            width: 100%;
+            text-align: center;
+            font-size: 16px;
+
+
+        }
+    }
     }
 
-    .titulo,
-    .parrafo {
-        flex: 1;
-        padding: 29px;
-        display: flex;
-        align-items:initial;
+    @media (max-width: 500px) {
+        a img {
+            max-width: 80%;
+        }
     }
-    .imagen-nosotros{
-        display: flex;
-        align-items: center;
-    }
-}
 
-@media  screen and (max-width: 1330px) {
-    .imagen-nosotros {
-       display: flex;
-       flex-direction: column;
-       align-items: center;
+    /** TARJETAS PRODUCTOS **/
+
+    @media screen and (max-width: 768px) {
+        .card {
+            width: 100%;
+
+        }
     }
- 
-    .parrafo {
-       margin-top: 20px;
+
+    @media screen and (max-width: 450px) {
+        .card {
+            width: 100%;
+
+        }
     }
- }
+
+    /** PAGE GALERIA **/
+
+    @media screen and (max-width: 480px) {
+        .imagen_final {
+            grid-column-end: span 2;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .imagen_alta {
+            grid-row-end: span 2;
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .logos {
+            grid-column-end: span 2;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        section .grid_galeria {
+            grid-template-columns: 1 1fr;
+
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        section .grid_galeria {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    /** PAGE NOSOTROS **/
+
+
+    @media (min-width: 750px) {
+
+        .nosotros {
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+
+        .titulo,
+        .parrafo {
+            flex: 1;
+            padding: 29px;
+            display: flex;
+            align-items: initial;
+        }
+
+        .imagen-nosotros {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    @media screen and (max-width: 1330px) {
+        .imagen-nosotros {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .parrafo {
+            margin-top: 20px;
+        }
+    }
+     

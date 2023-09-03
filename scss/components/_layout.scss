@@ -1,39 +1,23 @@
 .hero {
-
+    background-image: url(../img/fondo1.jpg);
+    background-position: center;
+    background-size: contain;
 
     .novedad {
         text-align: center;
         font-family: 'Inter', sans-serif;
         font-size: 20px;
         color: black;
-        background-image: url(../img/fondo1.jpg);
-        background-position: center;
-        background-size: contain;
         align-items: center;
         flex-wrap: wrap;
         overflow-x: hidden;
-
-
-        h3 {
-            @extend %flex;
-            font-size: nth($font-size, 4);
-            color: yellow;
-            text-decoration: lightness($color: #ffffff);
-            font-weight: bold;
-            font-style: italic;
-            flex-wrap: wrap;
-
-
-
-
-        }
-
         a {
             @include button-styles;
-            font-family: 'Inter', sans-serif;
-            padding: 15px;
-            border-radius: 20px;
+            border-radius: 10px;
             text-decoration: none;
+        }
+        img{
+            @include button-styles;
 
         }
     }
@@ -43,33 +27,48 @@
         margin-top: 30px;
         padding: 5%;
         background: rgba(255, 255, 255, 0.459);
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0.295) 0%, rgba(10, 6, 22, 0.7791491596638656) 20%, rgba(0, 0, 0, 1) 50%, rgba(10, 6, 22, 0.7931547619047619) 80%, rgb(255, 255, 255) 100%);
+        background: linear-gradient(180deg, #eb25ee36 0%, rgba(10, 6, 22, 0.7791491596638656) 20%, rgba(0, 0, 0, 1) 50%, rgba(47, 44, 56, 0.793) 80%, rgb(255, 255, 255) 100%);
 
         .presentacion__parrafo {
+
+            display: inline;
+            max-width: 90%;
+            margin-bottom: 10%;
             .welcome {
-                color: $secondary-color;
-                font-family: 'Inter', sans-serif;
-                font-weight: 900;
+                color: $color-letra-titulo;
+                font-family: 'Rubik Mono One', sans-serif;
+                
+                font-size: 30px;
+
+
             }
 
             p {
+                font-size: 25px;
                 text-align: center;
                 font-family: 'Inter', sans-serif;
-                color: rgb(174, 174, 174);
-                font-size: 20px;
+                color: $primary-color;
                 font-weight: bold;
+
             }
         }
 
         .suscribir {
+            @include flex(flex, center, center);
+            flex-direction: column;
+            text-align: center;
+
+
+
 
             p {
                 padding: 20px;
                 font-family: 'Inter', sans-serif;
                 font-size: nth($font-size, 2);
-                color: #e3d267;
-                margin: 0%;
-                padding-bottom: 0%;
+                color: $primary-color;
+                background-color: #5947f83a;
+                border-radius: 20PX;
+                font-weight: 900;
                 text-align: center;
 
             }
@@ -81,12 +80,19 @@
                 border-radius: 20px;
                 display: inline-block;
                 text-decoration: none;
-                margin: 25%;
-                margin-bottom: 50px;
                 margin-top: 0%;
+                max-width: 100%;
+                height: auto;
+
             }
         }
     }
+}
+
+.productos-destacados {
+    @include flex (flex, space-evenly, normal);
+    flex-wrap: wrap;
+    margin: 0% auto;
 }
 
 .productos {
@@ -180,21 +186,23 @@
 
 .imagen-nosotros {
 
-    img{
+    img {
         max-width: 100%;
         height: auto;
         padding: 20px;
     }
+
     .parrafo {
         color: rgb(7, 7, 7);
         font-family: 'Inter', sans-serif;
         text-align: left;
         flex-wrap: wrap;
         font-size: 20px;
-        p{
-            padding: 10px;
+
+        p {
+            padding: 30px;
         }
-        
+
     }
 }
 

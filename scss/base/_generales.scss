@@ -1,6 +1,7 @@
 /*! TIPOGRAFIA */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Press+Start+2P&family=Rubik+Mono+One&display=swap');
 
 /*! RESET */
 * {
@@ -9,14 +10,12 @@
 }
 
 body {
-
-
     h2 {
         @include button-styles;
-        font-family: 'Inter', sans-serif;
+        font-family: 'Rubik Mono One', sans-serif !important;
         font-size: 30px;
         padding: 2%;
-        color: $color-letra-titulo;
+        color: $secondary-color;
         border-radius: 50px;
         margin: 0 auto;
         margin-bottom: 30px;
@@ -24,7 +23,7 @@ body {
         max-width: fit-content;
         text-align: center;
         background: rgb(255, 255, 255);
-        background: linear-gradient(180deg, #ab02f16e 0%, rgba(10, 6, 22, 0.7791491596638656) 20%, rgba(0, 0, 0, 1) 50%, rgba(10, 6, 22, 0.7931547619047619) 80%, #ab02f16e 100%);
+        background: linear-gradient(180deg, #ba18ffc2 0%, rgba(10, 6, 22, 0.7791491596638656) 20%, rgba(0, 0, 0, 1) 50%, rgba(10, 6, 22, 0.7931547619047619) 80%, #ba18ffde 100%);
 
     }
 
@@ -50,18 +49,17 @@ body {
 }
 
 .main-productos-abajo {
-    
+    h2{
+    font-family: 'Rubik Mono One', sans-serif !important;
+
+    }
     background-color: black;
     padding: 30px;
     p{
+      
         color: white;
         text-align: center;
     }
-}
-
-span {
-    color: $tertiary-color;
-    font-weight: bold;
 }
 
 /* WHATSAPP */
