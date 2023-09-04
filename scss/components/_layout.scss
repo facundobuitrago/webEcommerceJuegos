@@ -144,7 +144,9 @@
     ul {
         @include flex(flex, space-evenly, center);
         list-style: none;
-        margin: 0% auto;
+        margin: 0 auto;
+        padding-left: 0;
+          
 
 
         img {
