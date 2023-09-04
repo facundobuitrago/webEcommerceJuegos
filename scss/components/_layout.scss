@@ -11,12 +11,14 @@
         align-items: center;
         flex-wrap: wrap;
         overflow-x: hidden;
+
         a {
             @include button-styles;
             border-radius: 10px;
             text-decoration: none;
         }
-        img{
+
+        img {
             @include button-styles;
 
         }
@@ -34,10 +36,11 @@
             display: inline;
             max-width: 90%;
             margin-bottom: 10%;
+
             .welcome {
                 color: $color-letra-titulo;
                 font-family: 'Rubik Mono One', sans-serif;
-                
+
                 font-size: 30px;
 
 
@@ -146,7 +149,7 @@
         list-style: none;
         margin: 0 auto;
         padding-left: 0;
-          
+
 
 
         img {
@@ -176,6 +179,7 @@
             box-shadow: 10px 10px 31px -8px rgba(0, 0, 0, 0.75);
             -webkit-box-shadow: 10px 10px 31px -8px rgba(0, 0, 0, 0.75);
             -moz-box-shadow: 10px 10px 31px -8px rgba(0, 0, 0, 0.75);
+
         }
     }
 }
