@@ -142,13 +142,13 @@
 
 .varios {
     ul {
-        @include flex(flex, space-around, center);
+        @include flex(flex, space-evenly, center);
         list-style: none;
+        margin: 0% auto;
 
 
         img {
             width: 100px;
-            margin: 0% auto;
         }
     }
 }
