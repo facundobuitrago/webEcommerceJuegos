@@ -43,6 +43,7 @@
 
                 font-size: 30px;
 
+
             }
 
             p {
@@ -182,8 +183,18 @@
 }
 
 /** PAGE NOSOTROS **/
+section {
+    .nosotros {
+        background: linear-gradient(-45deg, #fc1bfc, #000000, #931ca3, #000000);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        height: 100%;
+    }
+}
+
 
 .titulo {
+
     @extend %flex;
 }
 
@@ -193,17 +204,22 @@
         max-width: 100%;
         height: auto;
         padding: 20px;
+        border-radius: 70px;
     }
 
     .parrafo {
-        color: rgb(7, 7, 7);
-        font-family: 'Inter', sans-serif;
+        color: $primary-color;
+        font-family: 'Rubik Mono One', sans-serif;
         text-align: left;
         flex-wrap: wrap;
         font-size: 20px;
 
+
         p {
             padding: 30px;
+            background-color: #000000cb;
+            border-radius: 70px;
+            margin: 20px;
         }
 
     }
