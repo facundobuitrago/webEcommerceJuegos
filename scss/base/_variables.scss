@@ -43,7 +43,7 @@ $boton: (
     transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
 
     &:hover {
-        color: rgba(255, 255, 255, 1) !important;
+        color: #4D5FFF !important;
         transition: all 0.2s ease;
         transform: translateY(-7px);
     }

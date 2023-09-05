@@ -23,8 +23,8 @@ body h2 {
   font-family: 'Rubik Mono One', sans-serif !important;
   font-size: 30px;
   padding: 2%;
-  color: #ff1fff;
-  border-radius: 50px;
+  color: #ffffff;
+  border-radius: 40px;
   margin: 0 auto;
   margin-bottom: 30px;
   margin-top: 10px;
@@ -33,7 +33,7 @@ body h2 {
   background: white;
   background: linear-gradient(180deg, #ba18ffc2 0%, rgba(10, 6, 22, 0.779149) 20%, black 50%, rgba(10, 6, 22, 0.793155) 80%, #ba18ffde 100%); }
   body h2:hover {
-    color: white !important;
+    color: #4D5FFF !important;
     transition: all 0.2s ease;
     transform: translateY(-7px); }
 
@@ -136,7 +136,7 @@ header nav {
       border-radius: 10px;
       text-decoration: none; }
       .hero .novedad a:hover {
-        color: white !important;
+        color: #4D5FFF !important;
         transition: all 0.2s ease;
         transform: translateY(-7px); }
     .hero .novedad img {
@@ -145,7 +145,7 @@ header nav {
       text-decoration: none;
       transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1); }
       .hero .novedad img:hover {
-        color: white !important;
+        color: #4D5FFF !important;
         transition: all 0.2s ease;
         transform: translateY(-7px); }
   .hero .container-1 {
@@ -199,7 +199,7 @@ header nav {
         max-width: 100%;
         height: auto; }
         .hero .container-1 .suscribir a:hover {
-          color: white !important;
+          color: #4D5FFF !important;
           transition: all 0.2s ease;
           transform: translateY(-7px); }
 
