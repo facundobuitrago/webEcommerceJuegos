@@ -212,12 +212,12 @@ section {
 }
 
 .imagen-nosotros {
-
+    overflow-x: hidden;
     img {
         max-width: 100%;
-        height: auto;
         padding: 20px;
         border-radius: 70px;
+        margin: auto;
     }
 
     .parrafo {

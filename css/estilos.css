@@ -293,23 +293,24 @@ section .nosotros {
   100% {
     background-position: 0% 50%; } }
 
-.imagen-nosotros img {
-  max-width: 100%;
-  height: auto;
-  padding: 20px;
-  border-radius: 70px; }
-
-.imagen-nosotros .parrafo {
-  color: #ffffff;
-  font-family: 'Rubik Mono One', sans-serif;
-  text-align: left;
-  flex-wrap: wrap;
-  font-size: 20px; }
-  .imagen-nosotros .parrafo p {
-    padding: 30px;
-    background-color: #000000cb;
+.imagen-nosotros {
+  overflow-x: hidden; }
+  .imagen-nosotros img {
+    max-width: 100%;
+    padding: 20px;
     border-radius: 70px;
-    margin: 20px; }
+    margin: auto; }
+  .imagen-nosotros .parrafo {
+    color: #ffffff;
+    font-family: 'Rubik Mono One', sans-serif;
+    text-align: left;
+    flex-wrap: wrap;
+    font-size: 20px; }
+    .imagen-nosotros .parrafo p {
+      padding: 30px;
+      background-color: #000000cb;
+      border-radius: 70px;
+      margin: 20px; }
 
 /** PAGE CONTACTO **/
 .contacto_css {
